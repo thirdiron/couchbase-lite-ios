@@ -102,11 +102,23 @@ static NSCharacterSet* kIllegalNameChars;
 
 + (void) initialize {
     if (self == [CBLManager class]) {
+        MYLoggingCallback = ^(NSString* type, NSString* message) {
+            if (PublicLoggingCallback) {
+                PublicLoggingCallback(type,message);
+                return NO;
+            } else {
+                return YES;
+            }
+        };
+
         Log(@"### %@ ###", CBLFullVersionInfo());
         kIllegalNameChars = [[NSCharacterSet characterSetWithCharactersInString: kLegalChars]
                              invertedSet];
     }
 }
+
+
+static void (^PublicLoggingCallback)(NSString* type, NSString* message);
 
 
 + (void) enableLogging: (NSString*)type {
@@ -121,7 +133,7 @@ static NSCharacterSet* kIllegalNameChars;
 
 + (void) redirectLogging: (void (^)(NSString* type, NSString* message))callback {
 #ifndef MY_DISABLE_LOGGING
-    MYLoggingCallback = callback;
+    PublicLoggingCallback = callback;
 #endif
 }
 

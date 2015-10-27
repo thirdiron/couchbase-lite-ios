@@ -691,6 +691,9 @@
 		27F273C117039D6000CD2B85 /* CBLUICollectionSource.h in Copy Extras */ = {isa = PBXBuildFile; fileRef = 27CB056416CDD1FB0040C9F8 /* CBLUICollectionSource.h */; };
 		27F273C217039D6200CD2B85 /* CBLUICollectionSource.m in Copy Extras */ = {isa = PBXBuildFile; fileRef = 27CB056216CDD1ED0040C9F8 /* CBLUICollectionSource.m */; };
 		27F3A5D015ED427200263663 /* MYRegexUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27846FB615D475DF0030122F /* MYRegexUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27F4685F1BDED26C0073F889 /* CBLTimeSeriesCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 27F4685D1BDED26C0073F889 /* CBLTimeSeriesCollector.h */; };
+		27F468601BDED26C0073F889 /* CBLTimeSeriesCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F4685E1BDED26C0073F889 /* CBLTimeSeriesCollector.m */; };
+		27F468611BDED26C0073F889 /* CBLTimeSeriesCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F4685E1BDED26C0073F889 /* CBLTimeSeriesCollector.m */; };
 		27F5B176164D74EA00126D0D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F5B175164D74EA00126D0D /* Default-568h@2x.png */; };
 		27F5B18716519F2400126D0D /* CBLUITableSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DA4317158FD9B400F9E7B5 /* CBLUITableSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27F5B18916519F8F00126D0D /* MYDynamicObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DA434E15918C0200F9E7B5 /* MYDynamicObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1101,6 +1104,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 27E66A571A7305B10091DA3F;
 			remoteInfo = "CBL SQLite Storage";
+		};
+		27F468711BDED26D0073F889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B7E0FA18F8FE2800044EBA /* CBForest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 274D03D31BA732B000FF7C35;
+			remoteInfo = CBForestJNI;
+		};
+		27F468731BDED26D0073F889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B7E0FA18F8FE2800044EBA /* CBForest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 274D04081BA75E1C00FF7C35;
+			remoteInfo = CppTests;
+		};
+		27F468751BDED26D0073F889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B7E0FA18F8FE2800044EBA /* CBForest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 720EA3F51BA7EAD9002B8416;
+			remoteInfo = "CBForest-Interop";
+		};
+		27F468771BDED26D0073F889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B7E0FA18F8FE2800044EBA /* CBForest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 720EA46E1BA909C4002B8416;
+			remoteInfo = "CBForest-Interop iOS";
 		};
 		27FA99EF1917FFD000912F96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1679,6 +1710,8 @@
 		27F128AF156AC1C8008465C2 /* CBLOAuth1Authorizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLOAuth1Authorizer.h; sourceTree = "<group>"; };
 		27F128B0156AC1C9008465C2 /* CBLOAuth1Authorizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLOAuth1Authorizer.m; sourceTree = "<group>"; };
 		27F1E4A7169799DA00F0E50F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		27F4685D1BDED26C0073F889 /* CBLTimeSeriesCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLTimeSeriesCollector.h; sourceTree = "<group>"; };
+		27F4685E1BDED26C0073F889 /* CBLTimeSeriesCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLTimeSeriesCollector.m; sourceTree = "<group>"; };
 		27F5B175164D74EA00126D0D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		27F87BE61558890600F0A416 /* CBLGNUstep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBLGNUstep.h; sourceTree = "<group>"; };
 		27F87BE71558890700F0A416 /* CBLGNUstep.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBLGNUstep.m; sourceTree = "<group>"; };
@@ -2462,6 +2495,8 @@
 				27F87BE71558890700F0A416 /* CBLGNUstep.m */,
 				270BDD6815644EA8007D52F6 /* BuildFatLibrary.sh */,
 				27452C221AB20BD500327776 /* noop.m */,
+				27F4685D1BDED26C0073F889 /* CBLTimeSeriesCollector.h */,
+				27F4685E1BDED26C0073F889 /* CBLTimeSeriesCollector.m */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -2603,6 +2638,10 @@
 				27571E0C18F9060100141BDD /* libforestdb.a */,
 				27FA99F21917FFD000912F96 /* libTokenizer.a */,
 				27FA9A441918A7C700912F96 /* libTokenizer-iOS.a */,
+				27F468721BDED26D0073F889 /* libCBForestJNI.dylib */,
+				27F468741BDED26D0073F889 /* CppTests */,
+				27F468761BDED26D0073F889 /* libCBForest-Interop.dylib */,
+				27F468781BDED26D0073F889 /* libCBForest-Interop.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2899,6 +2938,7 @@
 				270B3E221489391E00E0A926 /* CBLDatabase+Internal.h in Headers */,
 				2751D4E4151BAE7000F7FD57 /* CBLManager+Internal.h in Headers */,
 				27513A561A6827DF0055DC40 /* CBLCollateJSON.h in Headers */,
+				27F4685F1BDED26C0073F889 /* CBLTimeSeriesCollector.h in Headers */,
 				2711CDFD14C7590A00505D55 /* CBLDatabase+Attachments.h in Headers */,
 				27B086581B387C3900D3D9D8 /* CBL_ReplicatorSettings.h in Headers */,
 				2711CE0014C7595900505D55 /* CBLDatabase+Insertion.h in Headers */,
@@ -3624,6 +3664,34 @@
 			remoteRef = 27B7E10C18F8FE2800044EBA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		27F468721BDED26D0073F889 /* libCBForestJNI.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libCBForestJNI.dylib;
+			remoteRef = 27F468711BDED26D0073F889 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27F468741BDED26D0073F889 /* CppTests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = CppTests;
+			remoteRef = 27F468731BDED26D0073F889 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27F468761BDED26D0073F889 /* libCBForest-Interop.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = "libCBForest-Interop.dylib";
+			remoteRef = 27F468751BDED26D0073F889 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27F468781BDED26D0073F889 /* libCBForest-Interop.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCBForest-Interop.a";
+			remoteRef = 27F468771BDED26D0073F889 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		27FA99F01917FFD000912F96 /* libCBForest.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -3965,6 +4033,7 @@
 				277EF39E17F4DEDD00F7B7F7 /* CBLQuery+FullTextSearch.m in Sources */,
 				277EF3A117F4DEDD00F7B7F7 /* CBLQuery+Geo.m in Sources */,
 				27B945B417692E2000B2DF2D /* CBLModel+Properties.m in Sources */,
+				27F468601BDED26C0073F889 /* CBLTimeSeriesCollector.m in Sources */,
 				270D6FC2164484190081812D /* CBLSocketChangeTracker.m in Sources */,
 				2776A59316A0C3A6006FF199 /* CBLPersonaAuthorizer.m in Sources */,
 				2776A63116A9BCBC006FF199 /* CBLDatabaseChange.m in Sources */,
@@ -4161,6 +4230,7 @@
 				27A073EE14C0BB6200F52FE7 /* CBLMisc.m in Sources */,
 				27B086921B38822500D3D9D8 /* MYBuffer+Zip.m in Sources */,
 				279CE40214D749A7009F3FA6 /* CBLMultipartReader.m in Sources */,
+				27F468611BDED26C0073F889 /* CBLTimeSeriesCollector.m in Sources */,
 				27B086B11B39E7BB00D3D9D8 /* CBLClientCertAuthorizer.m in Sources */,
 				27B086951B38822500D3D9D8 /* MYData.m in Sources */,
 				93EBA26E1B2EC72A0006C66C /* CBLJSViewCompiler.m in Sources */,
