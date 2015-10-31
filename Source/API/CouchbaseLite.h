@@ -31,6 +31,7 @@
 #import "CBLReplication.h"
 #import "CBLModel.h"
 #import "CBLModelFactory.h"
+#import "CBLTimeSeries.h"
 #import "CBLJSON.h"
 #import "CBLRegisterJSViewCompiler.h"
 
