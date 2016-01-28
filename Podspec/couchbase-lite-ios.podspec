@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.homepage        = 'http://mobile.couchbase.com'
   s.author          = 'Couchbase'
   s.source = { :http => "http://github.com/thirdiron/couchbase-lite-ios/releases/download/1.1.1-leakfix2/CouchbaseLite_and_Listener.zip" }
+  s.source_files = "CouchbaseLite_and_Listener/*"
   s.preserve_paths  = 'LICENSE.txt'
   s.ios.deployment_target = '7.0'
   s.frameworks      = 'CFNetwork', 'Security', 'SystemConfiguration'
