@@ -82,7 +82,7 @@ DefineLogDomain(ChangeTracker);
         _heartbeat = kDefaultHeartbeat;
         _includeConflicts = includeConflicts;
         self.lastSequenceID = lastSequenceID;
-        _usePOST = YES;
+        _usePOST = NO;  // Temp change to never use POST
     }
     return self;
 }
