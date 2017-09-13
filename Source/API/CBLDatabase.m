@@ -143,7 +143,7 @@ static void catchInBlock(void (^block)()) {
 }
 
 
-- (void) doAsync: (void (^)())block {
+- (void) doAsync: (void (^)(void))block {
     block = ^{
         if (_isOpen)
             catchInBlock(block);
@@ -155,7 +155,7 @@ static void catchInBlock(void (^block)()) {
 }
 
 
-- (void) doSync: (void (^)())block {
+- (void) doSync: (void (^)(void))block {
     if (_dispatchQueue)
         dispatch_sync(_dispatchQueue, ^{catchInBlock(block);});
     else
